@@ -38,7 +38,7 @@ function gen_items(path) {
                 items_by_name[item.name] = new_item;
                 items_by_displayname[item.display_name] = new_item;
             }
-            var JSON_out = JSON.stringify(items_by_name, null, 4);
+            var JSON_out = JSON.stringify(items_by_id, null, 4);
 
             fs.writeFile("items.json", JSON_out, function(err) {
                 if (err) {

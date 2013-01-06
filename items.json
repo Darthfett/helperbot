@@ -1,743 +1,798 @@
 {
-    "shovelIron": {
+    "256": {
         "id": 256,
         "display_name": "Iron Shovel",
         "name": "shovelIron"
     },
-    "pickaxeIron": {
+    "257": {
         "id": 257,
         "display_name": "Iron Pickaxe",
         "name": "pickaxeIron"
     },
-    "hatchetIron": {
+    "258": {
         "id": 258,
         "display_name": "Iron Axe",
         "name": "hatchetIron"
     },
-    "flintAndSteel": {
+    "259": {
         "id": 259,
         "display_name": "Flint and Steel",
         "name": "flintAndSteel"
     },
-    "apple": {
+    "260": {
         "id": 260,
         "display_name": "Apple",
         "name": "apple"
     },
-    "bow": {
+    "261": {
         "id": 261,
         "display_name": "Bow",
         "name": "bow"
     },
-    "arrow": {
+    "262": {
         "id": 262,
         "display_name": "Arrow",
         "name": "arrow"
     },
-    "coal": {
+    "263": {
         "id": 263,
         "display_name": "Coal",
         "name": "coal"
     },
-    "diamond": {
+    "264": {
         "id": 264,
         "display_name": "Diamond",
         "name": "diamond"
     },
-    "ingotIron": {
+    "265": {
         "id": 265,
         "display_name": "Iron Ingot",
         "name": "ingotIron"
     },
-    "ingotGold": {
+    "266": {
         "id": 266,
         "display_name": "Gold Ingot",
         "name": "ingotGold"
     },
-    "swordIron": {
+    "267": {
         "id": 267,
         "display_name": "Iron Sword",
         "name": "swordIron"
     },
-    "swordWood": {
+    "268": {
         "id": 268,
         "display_name": "Wooden Sword",
         "name": "swordWood"
     },
-    "shovelWood": {
+    "269": {
         "id": 269,
         "display_name": "Wooden Shovel",
         "name": "shovelWood"
     },
-    "pickaxeWood": {
+    "270": {
         "id": 270,
         "display_name": "Wooden Pickaxe",
         "name": "pickaxeWood"
     },
-    "hatchetWood": {
+    "271": {
         "id": 271,
         "display_name": "Wooden Axe",
         "name": "hatchetWood"
     },
-    "swordStone": {
+    "272": {
         "id": 272,
         "display_name": "Stone Sword",
         "name": "swordStone"
     },
-    "shovelStone": {
+    "273": {
         "id": 273,
         "display_name": "Stone Shovel",
         "name": "shovelStone"
     },
-    "pickaxeStone": {
+    "274": {
         "id": 274,
         "display_name": "Stone Pickaxe",
         "name": "pickaxeStone"
     },
-    "hatchetStone": {
+    "275": {
         "id": 275,
         "display_name": "Stone Axe",
         "name": "hatchetStone"
     },
-    "swordDiamond": {
+    "276": {
         "id": 276,
         "display_name": "Diamond Sword",
         "name": "swordDiamond"
     },
-    "shovelDiamond": {
+    "277": {
         "id": 277,
         "display_name": "Diamond Shovel",
         "name": "shovelDiamond"
     },
-    "pickaxeDiamond": {
+    "278": {
         "id": 278,
         "display_name": "Diamond Pickaxe",
         "name": "pickaxeDiamond"
     },
-    "hatchetDiamond": {
+    "279": {
         "id": 279,
         "display_name": "Diamond Axe",
         "name": "hatchetDiamond"
     },
-    "stick": {
+    "280": {
         "id": 280,
         "display_name": "Stick",
         "name": "stick"
     },
-    "bowl": {
+    "281": {
         "id": 281,
         "display_name": "Bowl",
         "name": "bowl"
     },
-    "mushroomStew": {
+    "282": {
         "id": 282,
         "display_name": "Mushroom Stew",
         "name": "mushroomStew"
     },
-    "swordGold": {
+    "283": {
         "id": 283,
         "display_name": "Golden Sword",
         "name": "swordGold"
     },
-    "shovelGold": {
+    "284": {
         "id": 284,
         "display_name": "Golden Shovel",
         "name": "shovelGold"
     },
-    "pickaxeGold": {
+    "285": {
         "id": 285,
         "display_name": "Golden Pickaxe",
         "name": "pickaxeGold"
     },
-    "hatchetGold": {
+    "286": {
         "id": 286,
         "display_name": "Golden Axe",
         "name": "hatchetGold"
     },
-    "string": {
+    "287": {
         "id": 287,
         "display_name": "String",
         "name": "string"
     },
-    "feather": {
+    "288": {
         "id": 288,
         "display_name": "Feather",
         "name": "feather"
     },
-    "sulphur": {
+    "289": {
         "id": 289,
         "display_name": "Gunpowder",
         "name": "sulphur"
     },
-    "hoeWood": {
+    "290": {
         "id": 290,
         "display_name": "Wooden Hoe",
         "name": "hoeWood"
     },
-    "hoeStone": {
+    "291": {
         "id": 291,
         "display_name": "Stone Hoe",
         "name": "hoeStone"
     },
-    "hoeIron": {
+    "292": {
         "id": 292,
         "display_name": "Iron Hoe",
         "name": "hoeIron"
     },
-    "hoeDiamond": {
+    "293": {
         "id": 293,
         "display_name": "Diamond Hoe",
         "name": "hoeDiamond"
     },
-    "hoeGold": {
+    "294": {
         "id": 294,
         "display_name": "Golden Hoe",
         "name": "hoeGold"
     },
-    "seeds": {
+    "295": {
         "id": 295,
         "display_name": "Seeds",
         "name": "seeds"
     },
-    "wheat": {
+    "296": {
         "id": 296,
         "display_name": "Wheat",
         "name": "wheat"
     },
-    "bread": {
+    "297": {
         "id": 297,
         "display_name": "Bread",
         "name": "bread"
     },
-    "helmetCloth": {
+    "298": {
         "id": 298,
         "display_name": "Leather Cap",
         "name": "helmetCloth"
     },
-    "chestplateCloth": {
+    "299": {
         "id": 299,
         "display_name": "Leather Tunic",
         "name": "chestplateCloth"
     },
-    "leggingsCloth": {
+    "300": {
         "id": 300,
         "display_name": "Leather Pants",
         "name": "leggingsCloth"
     },
-    "bootsCloth": {
+    "301": {
         "id": 301,
         "display_name": "Leather Boots",
         "name": "bootsCloth"
     },
-    "helmetChain": {
+    "302": {
         "id": 302,
         "display_name": "Chain Helmet",
         "name": "helmetChain"
     },
-    "chestplateChain": {
+    "303": {
         "id": 303,
         "display_name": "Chain Chestplate",
         "name": "chestplateChain"
     },
-    "leggingsChain": {
+    "304": {
         "id": 304,
         "display_name": "Chain Leggings",
         "name": "leggingsChain"
     },
-    "bootsChain": {
+    "305": {
         "id": 305,
         "display_name": "Chain Boots",
         "name": "bootsChain"
     },
-    "helmetIron": {
+    "306": {
         "id": 306,
         "display_name": "Iron Helmet",
         "name": "helmetIron"
     },
-    "chestplateIron": {
+    "307": {
         "id": 307,
         "display_name": "Iron Chestplate",
         "name": "chestplateIron"
     },
-    "leggingsIron": {
+    "308": {
         "id": 308,
         "display_name": "Iron Leggings",
         "name": "leggingsIron"
     },
-    "bootsIron": {
+    "309": {
         "id": 309,
         "display_name": "Iron Boots",
         "name": "bootsIron"
     },
-    "helmetDiamond": {
+    "310": {
         "id": 310,
         "display_name": "Diamond Helmet",
         "name": "helmetDiamond"
     },
-    "chestplateDiamond": {
+    "311": {
         "id": 311,
         "display_name": "Diamond Chestplate",
         "name": "chestplateDiamond"
     },
-    "leggingsDiamond": {
+    "312": {
         "id": 312,
         "display_name": "Diamond Leggings",
         "name": "leggingsDiamond"
     },
-    "bootsDiamond": {
+    "313": {
         "id": 313,
         "display_name": "Diamond Boots",
         "name": "bootsDiamond"
     },
-    "helmetGold": {
+    "314": {
         "id": 314,
         "display_name": "Golden Helmet",
         "name": "helmetGold"
     },
-    "chestplateGold": {
+    "315": {
         "id": 315,
         "display_name": "Golden Chestplate",
         "name": "chestplateGold"
     },
-    "leggingsGold": {
+    "316": {
         "id": 316,
         "display_name": "Golden Leggings",
         "name": "leggingsGold"
     },
-    "bootsGold": {
+    "317": {
         "id": 317,
         "display_name": "Golden Boots",
         "name": "bootsGold"
     },
-    "flint": {
+    "318": {
         "id": 318,
         "display_name": "Flint",
         "name": "flint"
     },
-    "porkchopRaw": {
+    "319": {
         "id": 319,
         "display_name": "Raw Porkchop",
         "name": "porkchopRaw"
     },
-    "porkchopCooked": {
+    "320": {
         "id": 320,
         "display_name": "Cooked Porkchop",
         "name": "porkchopCooked"
     },
-    "painting": {
+    "321": {
         "id": 321,
         "display_name": "Painting",
         "name": "painting"
     },
-    "appleGold": {
+    "322": {
         "id": 322,
         "display_name": "Golden Apple",
         "name": "appleGold"
     },
-    "sign": {
+    "323": {
         "id": 323,
         "display_name": "Sign",
         "name": "sign"
     },
-    "doorWood": {
+    "324": {
         "id": 324,
         "display_name": "Wooden Door",
         "name": "doorWood"
     },
-    "bucket": {
+    "325": {
         "id": 325,
         "display_name": "Bucket",
         "name": "bucket"
     },
-    "bucketWater": {
+    "326": {
         "id": 326,
         "display_name": "Water Bucket",
         "name": "bucketWater"
     },
-    "bucketLava": {
+    "327": {
         "id": 327,
         "display_name": "Lava Bucket",
         "name": "bucketLava"
     },
-    "minecart": {
+    "328": {
         "id": 328,
         "display_name": "Minecart",
         "name": "minecart"
     },
-    "saddle": {
+    "329": {
         "id": 329,
         "display_name": "Saddle",
         "name": "saddle"
     },
-    "doorIron": {
+    "330": {
         "id": 330,
         "display_name": "Iron Door",
         "name": "doorIron"
     },
-    "redstone": {
+    "331": {
         "id": 331,
         "display_name": "Redstone",
         "name": "redstone"
     },
-    "snowball": {
+    "332": {
         "id": 332,
         "display_name": "Snowball",
         "name": "snowball"
     },
-    "boat": {
+    "333": {
         "id": 333,
         "display_name": "Boat",
         "name": "boat"
     },
-    "leather": {
+    "334": {
         "id": 334,
         "display_name": "Leather",
         "name": "leather"
     },
-    "milk": {
+    "335": {
         "id": 335,
         "display_name": "Milk",
         "name": "milk"
     },
-    "brick": {
+    "336": {
         "id": 336,
         "display_name": "Brick",
         "name": "brick"
     },
-    "clay": {
+    "337": {
         "id": 337,
         "display_name": "Clay",
         "name": "clay"
     },
-    "reeds": {
+    "338": {
         "id": 338,
         "display_name": "Sugar Canes",
         "name": "reeds"
     },
-    "paper": {
+    "339": {
         "id": 339,
         "display_name": "Paper",
         "name": "paper"
     },
-    "book": {
+    "340": {
         "id": 340,
         "display_name": "Book",
         "name": "book"
     },
-    "slimeball": {
+    "341": {
         "id": 341,
         "display_name": "Slimeball",
         "name": "slimeball"
     },
-    "minecartChest": {
+    "342": {
         "id": 342,
         "display_name": "Minecart with Chest",
         "name": "minecartChest"
     },
-    "minecartFurnace": {
+    "343": {
         "id": 343,
         "display_name": "Minecart with Furnace",
         "name": "minecartFurnace"
     },
-    "egg": {
+    "344": {
         "id": 344,
         "display_name": "Egg",
         "name": "egg"
     },
-    "compass": {
+    "345": {
         "id": 345,
         "display_name": "Compass",
         "name": "compass"
     },
-    "fishingRod": {
+    "346": {
         "id": 346,
         "display_name": "Fishing Rod",
         "name": "fishingRod"
     },
-    "clock": {
+    "347": {
         "id": 347,
         "display_name": "Clock",
         "name": "clock"
     },
-    "yellowDust": {
+    "348": {
         "id": 348,
         "display_name": "Glowstone Dust",
         "name": "yellowDust"
     },
-    "fishRaw": {
+    "349": {
         "id": 349,
         "display_name": "Raw Fish",
         "name": "fishRaw"
     },
-    "fishCooked": {
+    "350": {
         "id": 350,
         "display_name": "Cooked Fish",
         "name": "fishCooked"
     },
-    "dyePowder": {
+    "351": {
         "id": 351,
         "name": "dyePowder"
     },
-    "bone": {
+    "352": {
         "id": 352,
         "display_name": "Bone",
         "name": "bone"
     },
-    "sugar": {
+    "353": {
         "id": 353,
         "display_name": "Sugar",
         "name": "sugar"
     },
-    "cake": {
+    "354": {
         "id": 354,
         "display_name": "Cake",
         "name": "cake"
     },
-    "bed": {
+    "355": {
         "id": 355,
         "display_name": "Bed",
         "name": "bed"
     },
-    "diode": {
+    "356": {
         "id": 356,
         "display_name": "Redstone Repeater",
         "name": "diode"
     },
-    "cookie": {
+    "357": {
         "id": 357,
         "display_name": "Cookie",
         "name": "cookie"
     },
-    "map": {
+    "358": {
         "id": 358,
         "display_name": "Map",
         "name": "map"
     },
-    "shears": {
+    "359": {
         "id": 359,
         "display_name": "Shears",
         "name": "shears"
     },
-    "melon": {
+    "360": {
         "id": 360,
         "display_name": "Melon",
         "name": "melon"
     },
-    "seeds_pumpkin": {
+    "361": {
         "id": 361,
         "display_name": "Pumpkin Seeds",
         "name": "seeds_pumpkin"
     },
-    "seeds_melon": {
+    "362": {
         "id": 362,
         "display_name": "Melon Seeds",
         "name": "seeds_melon"
     },
-    "beefRaw": {
+    "363": {
         "id": 363,
         "display_name": "Raw Beef",
         "name": "beefRaw"
     },
-    "beefCooked": {
+    "364": {
         "id": 364,
         "display_name": "Steak",
         "name": "beefCooked"
     },
-    "chickenRaw": {
+    "365": {
         "id": 365,
         "display_name": "Raw Chicken",
         "name": "chickenRaw"
     },
-    "chickenCooked": {
+    "366": {
         "id": 366,
         "display_name": "Cooked Chicken",
         "name": "chickenCooked"
     },
-    "rottenFlesh": {
+    "367": {
         "id": 367,
         "display_name": "Rotten Flesh",
         "name": "rottenFlesh"
     },
-    "enderPearl": {
+    "368": {
         "id": 368,
         "display_name": "Ender Pearl",
         "name": "enderPearl"
     },
-    "blazeRod": {
+    "369": {
         "id": 369,
         "display_name": "Blaze Rod",
         "name": "blazeRod"
     },
-    "ghastTear": {
+    "370": {
         "id": 370,
         "display_name": "Ghast Tear",
         "name": "ghastTear"
     },
-    "goldNugget": {
+    "371": {
         "id": 371,
         "display_name": "Gold Nugget",
         "name": "goldNugget"
     },
-    "netherStalkSeeds": {
+    "372": {
         "id": 372,
         "display_name": "Nether Wart",
         "name": "netherStalkSeeds"
     },
-    "potion": {
+    "373": {
         "id": 373,
         "display_name": "Potion",
         "name": "potion"
     },
-    "glassBottle": {
+    "374": {
         "id": 374,
         "display_name": "Glass Bottle",
         "name": "glassBottle"
     },
-    "spiderEye": {
+    "375": {
         "id": 375,
         "display_name": "Spider Eye",
         "name": "spiderEye"
     },
-    "fermentedSpiderEye": {
+    "376": {
         "id": 376,
         "display_name": "Fermented Spider Eye",
         "name": "fermentedSpiderEye"
     },
-    "blazePowder": {
+    "377": {
         "id": 377,
         "display_name": "Blaze Powder",
         "name": "blazePowder"
     },
-    "magmaCream": {
+    "378": {
         "id": 378,
         "display_name": "Magma Cream",
         "name": "magmaCream"
     },
-    "brewingStand": {
+    "379": {
         "id": 379,
         "display_name": "Brewing Stand",
         "name": "brewingStand"
     },
-    "cauldron": {
+    "380": {
         "id": 380,
         "display_name": "Cauldron",
         "name": "cauldron"
     },
-    "eyeOfEnder": {
+    "381": {
         "id": 381,
         "display_name": "Eye of Ender",
         "name": "eyeOfEnder"
     },
-    "speckledMelon": {
+    "382": {
         "id": 382,
         "display_name": "Glistering Melon",
         "name": "speckledMelon"
     },
-    "monsterPlacer": {
+    "383": {
         "id": 383,
         "display_name": "Spawn",
         "name": "monsterPlacer"
     },
-    "expBottle": {
+    "384": {
         "id": 384,
         "display_name": "Bottle o' Enchanting",
         "name": "expBottle"
     },
-    "fireball": {
+    "385": {
         "id": 385,
         "display_name": "Fire Charge",
         "name": "fireball"
     },
-    "writingBook": {
+    "386": {
         "id": 386,
         "display_name": "Book and Quill",
         "name": "writingBook"
     },
-    "writtenBook": {
+    "387": {
         "id": 387,
         "display_name": "Written Book",
         "name": "writtenBook"
     },
-    "emerald": {
+    "388": {
         "id": 388,
         "display_name": "Emerald",
         "name": "emerald"
     },
-    "frame": {
+    "389": {
         "id": 389,
         "display_name": "Item Frame",
         "name": "frame"
     },
-    "flowerPot": {
+    "390": {
         "id": 390,
         "display_name": "Flower Pot",
         "name": "flowerPot"
     },
-    "carrots": {
+    "391": {
         "id": 391,
         "display_name": "Carrot",
         "name": "carrots"
     },
-    "potato": {
+    "392": {
         "id": 392,
         "display_name": "Potato",
         "name": "potato"
     },
-    "potatoBaked": {
+    "393": {
         "id": 393,
         "display_name": "Baked Potato",
         "name": "potatoBaked"
     },
-    "potatoPoisonous": {
+    "394": {
         "id": 394,
         "display_name": "Poisonous Potato",
         "name": "potatoPoisonous"
     },
-    "emptyMap": {
+    "395": {
         "id": 395,
         "display_name": "Empty Map",
         "name": "emptyMap"
     },
-    "carrotGolden": {
+    "396": {
         "id": 396,
         "display_name": "Golden Carrot",
         "name": "carrotGolden"
     },
-    "skull": {
+    "397": {
         "id": 397,
         "name": "skull"
     },
-    "carrotOnAStick": {
+    "398": {
         "id": 398,
         "display_name": "Carrot on a Stick",
         "name": "carrotOnAStick"
     },
-    "netherStar": {
+    "399": {
         "id": 399,
         "display_name": "Nether Star",
         "name": "netherStar"
     },
-    "pumpkinPie": {
+    "400": {
         "id": 400,
         "display_name": "Pumpkin Pie",
         "name": "pumpkinPie"
     },
-    "fireworks": {
+    "401": {
         "id": 401,
         "display_name": "Firework Rocket",
         "name": "fireworks"
     },
-    "fireworksCharge": {
+    "402": {
         "id": 402,
         "display_name": "Firework Star",
         "name": "fireworksCharge"
     },
-    "enchantedBook": {
+    "403": {
         "id": 403,
         "display_name": "Enchanted Book",
         "name": "enchantedBook"
     },
-    "record": {
+    "2256": {
+        "id": 2256,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2257": {
+        "id": 2257,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2258": {
+        "id": 2258,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2259": {
+        "id": 2259,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2260": {
+        "id": 2260,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2261": {
+        "id": 2261,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2262": {
+        "id": 2262,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2263": {
+        "id": 2263,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2264": {
+        "id": 2264,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2265": {
+        "id": 2265,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2266": {
+        "id": 2266,
+        "display_name": "Music Disc",
+        "name": "record"
+    },
+    "2267": {
         "id": 2267,
         "display_name": "Music Disc",
         "name": "record"
