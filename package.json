@@ -1,0 +1,20 @@
+{
+  "name": "helperbot",
+  "version": "0.0.0",
+  "description": "A mineflayer bot that helps you do things in minecraft.",
+  "main": "helperbot.js",
+  "scripts": {
+    "test": "node helperbot.js"
+  },
+  "keywords": [
+    "mineflayer",
+    "minecraft",
+    "bot",
+    "client"
+  ],
+  "author": "Darthfett",
+  "license": "BSD",
+  "dependencies": {
+    "mineflayer": "0.0.1"
+  }
+}
