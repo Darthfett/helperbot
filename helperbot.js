@@ -1,12 +1,3 @@
-
-if (typeof String.prototype.startsWith != 'function') {
-  String.prototype.startsWith = function (str){
-    return this.slice(0, str.length) == str;
-  };
-}
-
-
-
 var mf = require('mineflayer');
 
 var args = process.argv;
@@ -22,7 +13,7 @@ bot.on('chat', function gimme(player, message) {
         return;
     }
 
-    if (message.startsWith("gimme")) {
+    if (message.slice(0, "gimme".length) == "gimme") {
         bot.chat("Go get it yourself.");
     }
 });
