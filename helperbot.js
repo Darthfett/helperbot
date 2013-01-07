@@ -1,14 +1,6 @@
-var mf = require('mineflayer');
-var fs = require('fs');
-
-var items = 5;
-fs.readFile('items.json', 'utf-8', function(error, file_data) {
-    if (error) {
-        throw error;
-    }
-    items = JSON.parse(file_data);
-});
-
+var mf = require('mineflayer'),
+    fs = require('fs'),
+    items = require('./itemdb');
 
 var username = "helperbot";
 
