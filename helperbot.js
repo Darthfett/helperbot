@@ -3,8 +3,7 @@ var mf = require('mineflayer'),
     path = require('path'),
     optimist = require('optimist'),
     prompt = require('prompt'),
-    requireIndex = require('requireindex'),
-    string = require('./lib/string');
+    requireIndex = require('requireindex');
 
 // Parse command line options:
 var default_opts = {
@@ -65,7 +64,7 @@ if (argv.login) {
 
         for (i = 0; i < required_fields.length; i++) {
             schema.properties[required_fields[i]] = {
-                description: required_fields[i].capitalize() + ':',
+                description: required_fields[i].charAt(0).toUpperCase() + required_fields[i].slice(1) + ':',
                 pattern: /.*/,
                 required: true,
             };
@@ -95,6 +94,10 @@ if (argv.login) {
 }
 
 var bot = mf.createBot(argv);
+
+bot.on('error', function(error) {
+    console.error(error.stack);
+});
 
 var plugins = requireIndex(path.join(__dirname, 'lib', 'plugins'));
 

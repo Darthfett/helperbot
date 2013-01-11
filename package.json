@@ -15,9 +15,10 @@
   "author": "Darthfett",
   "license": "BSD",
   "dependencies": {
-    "mineflayer": "0.0.5",
+    "mineflayer": "0.0.7",
     "optimist": "~0.3.5",
     "prompt": "~0.2.9",
-    "requireindex": "~1.0.0"
+    "requireindex": "~1.0.0",
+    "string": "~1.1.0"
   }
 }
