@@ -1,112 +1,103 @@
 var mf = require('mineflayer'),
     fs = require('fs'),
-    items = require('./itemdb');
+    path = require('path'),
+    optimist = require('optimist'),
+    prompt = require('prompt'),
+    requireIndex = require('requireindex'),
+    string = require('./lib/string');
 
-var username = "helperbot";
+// Parse command line options:
+var default_opts = {
+    login: false,
+};
+var aliases = {
+    'l': 'login',
+    'p': 'port',
+};
 
-var bot = mf.createBot({
-    username: username,
-});
+var argv = optimist
+    .alias(aliases)
+    .default(default_opts)
+    .boolean('l')
+    .argv;
 
-function lookupItemName(name) {
-    var database = items;
+// First unnamed argument is the host, second is the username
+if (argv._.length === 0) {
 
-    function filter_using_comparator(name_parts, comparator) {
-        var matches = [];
-
-        // loop over all the items
-        for (var item_id in database) {
-            var item = database[item_id.toString()]
-            var item_display_name = item.display_name;
-            if (item_display_name === undefined) {
-                continue;
-            }
-            var existing_name_parts = item_display_name.split(" ");
-            var found_all_name_parts = true;
-            for (var j = 0; j < name_parts.length; j++) {
-                var item_name = name_parts[j];
-                var found_name = false;
-                for (var k = 0; k < existing_name_parts.length; k++) {
-                    var existing_name = existing_name_parts[k];
-                    if (comparator(existing_name, item_name)) {
-                        found_name = true;
-                        break;
-                    }
-                }
-                if (!found_name) {
-                    found_all_name_parts = false;
-                    break;
-                }
-            }
-            if (found_all_name_parts) {
-                matches.push(database[item_id.toString()]);
-            }
-        }
-        return matches;
-    }
-    function searchForNameParts(name_parts) {
-        var comparators = [
-            function(s1, s2) { return s1.toLowerCase() == s2.toLowerCase(); },
-            function(s1, s2) { return s1.slice(0, s2.length).toLowerCase() == s2.toLowerCase(); },
-            function(s1, s2) { return s1.toLowerCase().indexOf(s2.toLowerCase()) != -1; },
-        ];
-        var results = [];
-        for (i = 0; i < comparators.length; i++) {
-            temp = filter_using_comparator(name_parts, comparators[i]);
-            for (var j = 0; j < temp.length; j++) {
-                results.push(temp[j]);
-            }
-            if (results.length !== 0) {
-                return results;
-            }
-        }
-        return results;
-    }
-    var name_parts = name.split(" ");
-    var results = searchForNameParts(name_parts);
-
-    var number_or_words_results = [];
-
-    if (results.length > 1) {
-        // try to resolve ambiguity by number of words
-        for (i = 0; i < results.length; i++) {
-            var result = results[i];
-            if (result.display_name.split(" ").length === name_parts.length) {
-                number_or_words_results.push(result);
-            }
-        }
-    }
-
-    if (number_or_words_results.length === 1) {
-        return number_or_words_results;
-    }
-    return results;
+} else if (argv._.length === 1) {
+    argv.host = argv._[0];
+} else if (argv._.length === 2) {
+    argv.host = argv._[0];
+    argv.username = argv._[1];
+} else {
+    argv.host = argv._[0];
+    argv.username = argv._[1];
+    console.log("Ignoring unknown options: " + argv.slice(2).join(', '));
 }
 
-bot.on('chat', function gimme(player, message) {
-    if (username == player) {
-        return;
-    }
+if (argv.login) {
+    // If login flag is set, prompt user for any missing credentials
 
-    if (message.slice(0, "gimme".length) == "gimme") {
-        var args = message.split(' ').slice(1);
-        var count = parseInt(args[0]);
-        if (!isNaN(count)) {
-            args = args.slice(1);
+    required_fields = [];
+    if (!argv.username) {
+        required_fields.push('username');
+    }
+    if (!argv.email) {
+        required_fields.push('email');
+    }
+    if (!argv.password) {
+        required_fields.push('password');
+    }
+    if (required_fields) {
+
+        prompt.override = argv;
+
+        // prompt bug doesn't allow for falsy value options, work around this by changing the defaults
+        prompt.message = '';
+        prompt.delimiter = '';
+        prompt.colors = false;
+
+        prompt.start({
+            allowEmpty: true,
+        });
+
+        var schema = { properties: {} };
+
+        for (i = 0; i < required_fields.length; i++) {
+            schema.properties[required_fields[i]] = {
+                description: required_fields[i].capitalize() + ':',
+                pattern: /.*/,
+                required: true,
+            };
         }
 
-        var item_matches = lookupItemName(args.join(' '));
-
-        if (item_matches) {
-            var item = item_matches[0];
-            if (isNaN(count)) {
-                bot.chat('/give ' + player + ' ' + item.id);
-            } else {
-                bot.chat('/give ' + player + ' ' + count + ' ' + item.id);
-            }
-        } else {
-            bot.chat("wat.");
-            bot.chat("Go get it yourself.");
+        if (schema.properties.password) {
+            schema.properties.password.hidden = true;
         }
+
+        prompt.get(schema, function get_login(err, result) {
+            if (err) throw err;
+            argv.username = result.username || argv.username;
+            argv.email = result.email || argv.email;
+            argv.password = result.password || argv.password;
+
+            console.log(argv);
+
+        });
     }
-});
+} else {
+    // Set default credential options
+
+    // default email and password are unnecessary (defaults to offline mode), so we just need a default username
+    if (typeof(argv.username) === 'undefined') {
+        argv.username = 'helperbot';
+    }
+}
+
+var bot = mf.createBot(argv);
+
+var plugins = requireIndex(path.join(__dirname, 'lib', 'plugins'));
+
+for (plugin in plugins) {
+    plugins[plugin].inject(bot);
+}
