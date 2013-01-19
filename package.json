@@ -6,6 +6,9 @@
   "scripts": {
     "test": "node helperbot.js"
   },
+  "bin": {
+    "helperbot": "./helperbot.js"
+  },
   "keywords": [
     "mineflayer",
     "minecraft",
