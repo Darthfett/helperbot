@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var mf = require('mineflayer'),
     fs = require('fs'),
     path = require('path'),
