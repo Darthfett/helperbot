@@ -80,9 +80,6 @@ if (argv.login) {
             argv.username = result.username || argv.username;
             argv.email = result.email || argv.email;
             argv.password = result.password || argv.password;
-
-            console.log(argv);
-
         });
     }
 } else {
