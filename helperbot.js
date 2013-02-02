@@ -9,6 +9,7 @@ var mf = require('mineflayer'),
 // Parse command line options:
 var default_opts = {
     login: false,
+    masters: [],
 };
 var aliases = {
     'l': 'login',
@@ -20,6 +21,9 @@ var argv = optimist
     .default(default_opts)
     .boolean('l')
     .argv;
+
+// For now, we support one master.
+argv.masters = [argv.masters.toLowerCase()];
 
 // First unnamed argument is the host, second is the username
 if (argv._.length === 0) {
@@ -92,6 +96,8 @@ if (argv.login) {
 }
 
 var bot = mf.createBot(argv);
+
+bot.masters = argv.masters;
 
 bot.on('error', function(error) {
     console.error(error.stack);
