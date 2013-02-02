@@ -1,6 +1,6 @@
 {
   "name": "helperbot",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A mineflayer bot that helps you do things in minecraft.",
   "main": "helperbot.js",
   "scripts": {
@@ -18,8 +18,8 @@
   "author": "Darthfett",
   "license": "BSD",
   "dependencies": {
-    "mineflayer": "0.0.12",
-    "mineflayer-navigate": "0.0.2",
+    "mineflayer": "0.0.21",
+    "mineflayer-navigate": "0.0.4",
     "optimist": "~0.3.5",
     "prompt": "~0.2.9",
     "requireindex": "~1.0.0",
