@@ -23,7 +23,7 @@ var argv = optimist
     .argv;
 
 // For now, we support one master.
-argv.masters = [argv.masters.toLowerCase()];
+argv.masters = argv.masters.length ? [argv.masters.toLowerCase()] : [];
 
 // First unnamed argument is the host, second is the username
 if (argv._.length === 0) {
