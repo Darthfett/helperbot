@@ -90,7 +90,7 @@ if (argv.login) {
     // Set default credential options
 
     // default email and password are unnecessary (defaults to offline mode), so we just need a default username
-    if (typeof(argv.username) === 'undefined') {
+    if (argv.username == null) {
         argv.username = 'helperbot';
     }
 }
