@@ -14,16 +14,16 @@ Connect a mineflayer bot to SERVER as USERNAME.
 By default connects 'helperbot' to localhost.
 
       --email=EMAIL        connect with the given EMAIL
-            --help               display this help and exit
-	      -l, --login              prompt for credentials and login to minecraft.net
-	            --password=PASSWORD  connect to minecraft.net with the given PASSWORD
-		      -p, --port=PORT          connect to the given port (defaults to 25565)
+      --help               display this help and exit
+      -l, --login          prompt for credentials and login to minecraft.net
+      --password=PASSWORD  connect to minecraft.net with the given PASSWORD
+      -p, --port=PORT      connect to the given port (defaults to 25565)
 ```
 
  - Example online mode:
 
 ```sh
-helperbot server username --email=email@example.com --password=12345678
+helperbot server username --password=12345678
 ```
 
  - Example online mode #2:

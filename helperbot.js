@@ -46,9 +46,6 @@ if (argv.login) {
     if (!argv.username) {
         required_fields.push('username');
     }
-    if (!argv.email) {
-        required_fields.push('email');
-    }
     if (!argv.password) {
         required_fields.push('password');
     }
@@ -82,29 +79,37 @@ if (argv.login) {
         prompt.get(schema, function get_login(err, result) {
             if (err) throw err;
             argv.username = result.username || argv.username;
-            argv.email = result.email || argv.email;
             argv.password = result.password || argv.password;
+
+            // Connect
+            init(argv);
         });
     }
 } else {
     // Set default credential options
 
-    // default email and password are unnecessary (defaults to offline mode), so we just need a default username
+    // Default username, no password makes it default to offline mode.
     if (argv.username == null) {
         argv.username = 'helperbot';
     }
+
+    // Connect
+    init(argv);
 }
 
-var bot = mf.createBot(argv);
+function init(argv) {
 
-bot.masters = argv.masters;
+    var bot = mf.createBot(argv);
 
-bot.on('error', function(error) {
-    console.error(error.stack);
-});
+    bot.masters = argv.masters;
 
-var plugins = requireIndex(path.join(__dirname, 'lib', 'plugins'));
+    bot.on('error', function(error) {
+        console.error(error.stack);
+    });
 
-for (plugin in plugins) {
-    plugins[plugin].inject(bot);
+    var plugins = requireIndex(path.join(__dirname, 'lib', 'plugins'));
+
+    for (plugin in plugins) {
+        plugins[plugin].inject(bot);
+    }
 }
