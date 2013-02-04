@@ -13,7 +13,6 @@ Usage: node helperbot.js [SERVER] [USERNAME] [OPTIONS]
 Connect a mineflayer bot to SERVER as USERNAME.
 By default connects 'helperbot' to localhost.
 
-      --email=EMAIL        connect with the given EMAIL
       --help               display this help and exit
       -l, --login          prompt for credentials and login to minecraft.net
       --password=PASSWORD  connect to minecraft.net with the given PASSWORD
