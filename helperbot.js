@@ -22,8 +22,8 @@ var argv = optimist
     .boolean('l')
     .argv;
 
-// For now, we support one master.
-argv.masters = argv.masters.length ? [argv.masters.toLowerCase()] : [];
+// Split masters by commas in order to get all masters
+argv.masters = argv.masters.length ? argv.masters.split(',').map(function(master) { return master.toLowerCase(); }) : [];
 
 // First unnamed argument is the host, second is the username
 if (argv._.length === 0) {
