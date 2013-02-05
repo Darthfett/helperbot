@@ -110,6 +110,10 @@ function init(argv) {
     var plugins = requireIndex(path.join(__dirname, 'lib', 'plugins'));
 
     for (plugin in plugins) {
-        plugins[plugin].inject(bot);
+        if (plugins[plugin].inject != null) {
+            plugins[plugin].inject(bot);
+        } else {
+            console.log(plugin, 'has no inject function.');
+        }
     }
 }
