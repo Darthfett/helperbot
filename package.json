@@ -1,6 +1,6 @@
 {
   "name": "helperbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mineflayer bot that helps you do things in minecraft.",
   "main": "helperbot.js",
   "scripts": {
