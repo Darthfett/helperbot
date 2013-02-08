@@ -1,3 +1,7 @@
+## 0.0.4
+ * Added 'mine block name' command and all related miner commands.  Thanks, superjoe30!
+ * Fixed a bug with blockFinder accepting an array of item ids.  Thanks, superjoe30!
+
 ## 0.0.3
  * Added 'help [command]' command to display information about a given command.
  * Add quiet mode, which causes the bot to whisper all chatCommand responses (via a new responderFunc given to command handlers).
