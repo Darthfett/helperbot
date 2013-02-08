@@ -8,15 +8,15 @@ Supports Minecraft 1.4.7
 
 ## Available In-game Commands
 
- - '**come**' - Make the bot come to your current location.
- - '**echo** message' - Repeat the given 'message' into chat.
- - '**find** block name' - Make the bot find the coordinates of the nearest 'block name' block.
- - '**give** username [count] block name' - Make the bot /give 'username' 'count' of a given block.
- - '**gimme** [count] block name' - Make the bot /give you 'count' of a given block.
- - '**help** command' - Gives help on a given command.
- - '**masters** [add/rm username]' - Display the bot's list of masters, or add/remove a master.
- - '**quiet mode** [on/off]' - Enable/disable quiet mode.
- - '**quit**' - Make the bot leave the server.
+ - **come** - Make the bot come to your current location.
+ - **echo** message - Repeat the given 'message' into chat.
+ - **find** block name - Make the bot find the coordinates of the nearest 'block name' block.
+ - **give** username [count] block name - Make the bot /give 'username' 'count' of a given block.
+ - **gimme** [count] block name - Make the bot /give you 'count' of a given block.
+ - **help** command - Gives help on a given command.
+ - **masters** [add/rm username] - Display the bot's list of masters, or add/remove a master.
+ - **quiet mode** [on/off] - Enable/disable quiet mode.
+ - **quit** - Make the bot leave the server.
 
 ## Usage
 
