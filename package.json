@@ -19,7 +19,7 @@
   "license": "BSD",
   "dependencies": {
     "mineflayer": "0.0.23",
-    "mineflayer-navigate": "0.0.6",
+    "mineflayer-navigate": "0.0.8",
     "optimist": "~0.3.5",
     "prompt": "~0.2.9",
     "requireindex": "~1.0.0",
