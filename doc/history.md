@@ -1,3 +1,11 @@
+## 0.0.3
+ * Added 'help [command]' command to display information about a given command.
+ * Add quiet mode, which causes the bot to whisper all chatCommand responses (via a new responderFunc given to command handlers).
+ * Added 'quiet mode [on/off]' command to enable/disable quiet mode.
+ * chatCommands now supports whispered commands.
+ * Added 'masters' command to list a bot's masters.
+ * 'add master [username]' and 'rm master [username' syntax changed to 'masters [add/rm username]'.
+
 ## 0.0.2
  * The 'gimme' command now (officially) supports asking for a certain number of items (capped at 4 stacks at a time).  E.g. `gimme 100 cobblestone`
  * The 'gimme' command now supports getting the maximum number of stacks by adding an '!' after the item name.  E.g. `gimme torch!`

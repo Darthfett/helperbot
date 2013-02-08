@@ -18,6 +18,7 @@ By default connects 'helperbot' to localhost.
       --password=PASSWORD  connect to minecraft.net with the given PASSWORD
       -p, --port=PORT      connect to the given port (defaults to 25565)
       --masters=usr1,...   set the bot's masters to usr1, ...
+      -q, --quiet          causes the bot to whisper all responses
 ```
 
  - Example online mode:
