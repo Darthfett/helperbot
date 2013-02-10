@@ -105,6 +105,9 @@ function init(argv) {
     bot.masters = argv.masters;
     bot.quietMode = argv.quiet;
 
+    require('mineflayer-navigate')(mf)(bot);
+    require('mineflayer-blockfinder')(mf)(bot);
+
     bot.on('error', function(error) {
         console.error(error.stack);
     });
