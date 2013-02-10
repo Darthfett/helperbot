@@ -8,6 +8,9 @@ Supports Minecraft 1.4.7
 
 ## Available In-game Commands
 
+You can give a bot a command by talking in chat, or in whispered chat.
+You can direct a specific bot in chat by speaking their name first, e.g. "helperbot, come".
+
  - **come** - Make the bot come to your current location.
  - **echo** message - Repeat the given 'message' into chat.
  - **find** block name - Make the bot find the coordinates of the nearest 'block name' block.
