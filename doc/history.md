@@ -1,3 +1,15 @@
+## 0.0.5
+ * Removed the block_in plugin, which was causing bots to crash when trying to respond to people speaking the word 'in'.
+ * Added the ability to direct the bots by speaking their name, e.g. "helperbot, come".
+ * Finder now announces what block it will be looking for.
+ * Miner now uses Chat Commands responder func.  Thanks, superjoe30!
+ * Miner improvements to avoid suffocation.  Thanks, superjoe30!
+ * Bots now whisper their masters when they join to inform them on how to use them.
+ * blockFinder's findBlock renamed to findBlockSync, new asynchronous findBlock added.
+ * Finder no longer hogs the CPU, which could have caused timeout disconnections.
+ * Added 'toss [player] [count] [item name]' command to toss 'player' 'count' items matching 'item name'.  Thanks, superjoe30 for original version!
+ * Added 'list' command to list the bot's inventory.  Thanks, superjoe30!
+
 ## 0.0.4
  * Added 'mine block name' command and all related miner commands.  Thanks, superjoe30!
  * Fixed a bug with blockFinder accepting an array of item ids.  Thanks, superjoe30!
