@@ -17,6 +17,7 @@ You can direct a specific bot in chat by speaking their name first, e.g. "helper
  - **give** username [count] block name - Make the bot /give 'username' 'count' of a given block.
  - **gimme** [count] block name - Make the bot /give you 'count' of a given block.
  - **help** command - Gives help on a given command.
+ - **list** - List the bot's inventory.
  - **masters** [add/rm username] - Display the bot's list of masters, or add/remove a master.
  - **mine** block name - Start mining 'block name'. You can add multiple target blocks.
  - **mine.resume** - Resume mining after an interruption.
@@ -24,6 +25,7 @@ You can direct a specific bot in chat by speaking their name first, e.g. "helper
  - **mine.stop** - Stop mining.
  - **quiet mode** [on/off] - Enable/disable quiet mode.
  - **quit** - Make the bot leave the server.
+ - **toss** [player] [count] [item name] - Toss 'player' 'count' items that match 'item name'.
 
 ## Usage
 
