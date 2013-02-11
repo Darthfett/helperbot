@@ -1,3 +1,8 @@
+## 0.0.6
+ * blockFinder has been moved to another project and used as a dependency, see [mineflayer-blockfinder](https://github.com/Darthfett/mineflayer-blockfinder).
+ * The 'find' and 'mine' should now get the absolute closest matching block(s).
+ * The 'list' command should now also tell the user when the bot's inventory is empty.
+
 ## 0.0.5
  * Removed the block_in plugin, which was causing bots to crash when trying to respond to people speaking the word 'in'.
  * Added the ability to direct the bots by speaking their name, e.g. "helperbot, come".
