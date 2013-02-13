@@ -25,6 +25,8 @@ You can direct a specific bot in chat by speaking their name first, e.g. "helper
  - **mine.stop** - Stop mining.
  - **quiet mode** [on/off] - Enable/disable quiet mode.
  - **quit** - Make the bot leave the server.
+ - **strip** - Start strip mining whatever chunk the bot is in.
+ - **strip.stop** - Stop strip mining.
  - **toss** [player] [count] [item name] - Toss 'player' 'count' items that match 'item name'.
 
 ## Usage

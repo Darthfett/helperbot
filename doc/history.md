@@ -1,3 +1,6 @@
+## 0.0.7
+ * New strip miner plugin - 'Strip' makes the bot start mining the chunk he's standing in, 'strip.stop' to stop.
+
 ## 0.0.6
  * blockFinder has been moved to another project and used as a dependency, see [mineflayer-blockfinder](https://github.com/Darthfett/mineflayer-blockfinder).
  * The 'find' and 'mine' should now get the absolute closest matching block(s).
