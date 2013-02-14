@@ -1,3 +1,9 @@
+## 0.0.8
+ * Update 'list' command to merge together items of the same type.
+ * Update 'gimme' command to give up to 36 stacks.
+ * Update 'list' command to list how many empty inventory slots the bot has.
+ * Revert blockfinder algorithm to old faster version.
+
 ## 0.0.7
  * New strip miner plugin - 'Strip' makes the bot start mining the chunk he's standing in, 'strip.stop' to stop.
 
