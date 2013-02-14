@@ -1,3 +1,6 @@
+## 0.0.9
+ * Update blockfinder algorithm to new, more accurate version.
+
 ## 0.0.8
  * Update 'list' command to merge together items of the same type.
  * Update 'gimme' command to give up to 36 stacks.
