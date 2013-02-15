@@ -14,7 +14,6 @@ var default_opts = {
 var aliases = {
     'l': 'login',
     'p': 'port',
-    'q': 'quiet'
 };
 
 var argv = optimist
@@ -103,7 +102,7 @@ function init(argv) {
     var bot = mf.createBot(argv);
 
     bot.masters = argv.masters;
-    bot.quietMode = argv.quiet;
+    bot.quietMode = true;
 
     require('mineflayer-navigate')(mf)(bot);
     require('mineflayer-scaffold')(mf)(bot);
