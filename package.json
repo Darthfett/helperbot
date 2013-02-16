@@ -25,6 +25,6 @@
     "requireindex": "~1.0.0",
     "string": "~1.1.0",
     "mineflayer-blockfinder": "0.0.5",
-    "mineflayer-scaffold": "git://github.com/superjoe30/mineflayer-scaffold.git#0.0.3"
+    "mineflayer-scaffold": "git://github.com/superjoe30/mineflayer-scaffold.git#0.0.4"
   }
 }
