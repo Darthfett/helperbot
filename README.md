@@ -14,6 +14,8 @@ You can direct a specific bot in chat by speaking their name first, e.g. "helper
  - **come** - Make the bot come to your current location.
  - **echo** message - Repeat the given 'message' into chat.
  - **find** block name - Make the bot find the coordinates of the nearest 'block name' block.
+ - **follow** [username] - Start following a player.
+ - **follow.stop** - Stop following players.
  - **give** username [count] block name - Make the bot /give 'username' 'count' of a given block.
  - **gimme** [count] block name - Make the bot /give you 'count' of a given block.
  - **help** command - Gives help on a given command.
