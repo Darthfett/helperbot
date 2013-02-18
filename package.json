@@ -18,7 +18,7 @@
   "author": "Darthfett",
   "license": "BSD",
   "dependencies": {
-    "mineflayer": "0.0.33",
+    "mineflayer": "0.0.35",
     "mineflayer-navigate": "0.0.8",
     "optimist": "~0.3.5",
     "prompt": "~0.2.9",
