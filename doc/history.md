@@ -1,3 +1,10 @@
+## 0.0.10
+ * Bots now have quiet mode enabled by default.
+ * 'Come' command now uses responderFunc.
+ * Made 'strip' command be much more efficient.  Thanks, superjoe30!
+ * Mining now works much faster.  Thanks, superjoe30!
+ * Added 'follow' command, which makes the bot follow a player.
+
 ## 0.0.9
  * Update blockfinder algorithm to new, more accurate version.
 
