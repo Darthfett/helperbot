@@ -48,21 +48,24 @@ By default connects 'helperbot' to localhost.
  - Example online mode:
 
 ```sh
-helperbot server username --password=12345678
+node helperbot.js server username --password=12345678
 ```
 
  - Example online mode #2:
 
 ```sh
-helperbot server --login
+node helperbot.js server --login
 ```
 
  - Example offline mode:
 
 ```sh
-helperbot server
+node helperbot.js server
 ```
 
 ## Installation
 
-`npm install -g helperbot`
+```sh
+cd helperbot
+npm install
+```
