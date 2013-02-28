@@ -14,6 +14,7 @@ var default_opts = {
 var aliases = {
     'l': 'login',
     'p': 'port',
+    'h': 'help',
 };
 
 var argv = optimist
@@ -21,6 +22,19 @@ var argv = optimist
     .default(default_opts)
     .boolean('l')
     .argv;
+
+if (argv.help) {
+    console.log("Usage: node helperbot.js [SERVER] [USERNAME] [OPTIONS]\n\
+Connect a mineflayer bot to SERVER as USERNAME.\n\
+By default connects 'helperbot' to localhost.\n\
+\n\
+  -h, --help               display this help and exit\n\
+  -l, --login              prompt for credentials and login to minecraft.net\n\
+      --masters=a,b,c,...  set the bot's masters to player a, b, c, ...\n\
+      --password=PASSWORD  connect to minecraft.net with the given PASSWORD\n\
+  -p, --port=PORT          connect to the given port (defaults to 25565)");
+    process.exit(code=0);
+}
 
 // Split masters by commas in order to get all masters
 argv.masters = argv.masters.length ? argv.masters.split(',').map(function(master) { return master.toLowerCase(); }) : [];

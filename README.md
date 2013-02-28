@@ -38,11 +38,11 @@ Usage: node helperbot.js [SERVER] [USERNAME] [OPTIONS]
 Connect a mineflayer bot to SERVER as USERNAME.
 By default connects 'helperbot' to localhost.
 
-      --help               display this help and exit
-      -l, --login          prompt for credentials and login to minecraft.net
+  -h, --help               display this help and exit
+  -l, --login              prompt for credentials and login to minecraft.net
+      --masters=a,b,c,...  set the bot's masters to player a, b, c, ...
       --password=PASSWORD  connect to minecraft.net with the given PASSWORD
-      -p, --port=PORT      connect to the given port (defaults to 25565)
-      --masters=usr1,...   set the bot's masters to usr1, ...
+  -p, --port=PORT          connect to the given port (defaults to 25565)
 ```
 
  - Example online mode:
