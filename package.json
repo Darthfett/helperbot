@@ -25,7 +25,7 @@
     "requireindex": "~1.1.0",
     "string": "~3.3.3",
     "mineflayer-blockfinder": "~0.0.7",
-    "mineflayer-scaffold": "~0.0.5"
+    "mineflayer-scaffold": "~0.0.5",
     "vec3": "^0.1.3"
   }
 }
