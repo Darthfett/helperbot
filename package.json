@@ -26,6 +26,7 @@
     "string": "~3.3.3",
     "mineflayer-blockfinder": "~0.0.7",
     "mineflayer-scaffold": "git://github.com/darthfett/mineflayer-scaffold.git",
+    "minecraft-data": "~2",
     "vec3": "^0.1.3"
   }
 }
